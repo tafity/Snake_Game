@@ -46,7 +46,7 @@ export default class Snake {
 				berry.randomPosition();
 			}
 	
-			for( let i = index + 1; i < this.tails.length; i++ ) {
+			/*for( let i = index + 1; i < this.tails.length; i++ ) {
 	
 				if ( el.x == this.tails[i].x && el.y == this.tails[i].y ) {
 					this.death();
@@ -54,7 +54,14 @@ export default class Snake {
 					berry.randomPosition();
 				}
 	
-			}
+			}*/
+			for (let i = 0; i < this.tails.length; i++) {
+        		if (this.x == this.tails[i][0] && this.y == this.tails[i][1]) {
+           			this.death();
+					score.setToZero();
+					berry.randomPosition();
+        }
+    }
 	
 		} );
 
