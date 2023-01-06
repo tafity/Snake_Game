@@ -34,7 +34,7 @@ body {
 	background: black;
 	border-radius: 5px;
 
-	display: flex;
+	display:block;
 	justify-content: center;
 	align-items: center;
 }
@@ -42,9 +42,30 @@ body {
 	font-size: 3vmin;
 	color: #D21855;
 	font-weight: bold;
+	text-align: center;
+	margin-left: 80px;
+	margin-top: 10px;
+}
+.best {
+	margin-top: 45px;
+	padding: 10px 10px;
+	min-width: 100px;
+	height: 20px;
+	background: black;
+	border-radius: 5px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.count {
+	font-size: 2vmin;
+	color: #D21855;
+	font-weight: bold;
 }
 
 .canvas-wrapper {
+	margin-top: 50px;
 	background-color: #161618;
 	border-radius: 5px;
 	border: 10px solid #161618;
